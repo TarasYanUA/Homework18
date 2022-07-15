@@ -12,6 +12,4 @@ public class LuckyTicketTestJunit {
     public void shouldCreateDefaultArrayTest() {
         assertEquals(arrayLuckyTicket.toString(), "[3, 8, 3, 3, 3, 8]");
     }
-
-
 }
