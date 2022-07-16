@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import taras.LuckyTicket;
 
@@ -12,4 +13,14 @@ public class LuckyTicketTestJunit {
     public void shouldCreateDefaultArrayTest() {
         assertEquals(arrayLuckyTicket.toString(), "[3, 8, 3, 3, 3, 8]");
     }
+
+    @Test
+    void verifyArrayEqualIntegerValue() {
+        int[] array = {3, 8, 3, 3, 3, 8};
+        int[] actualResult = LuckyTicket.resultArray(array);
+
+        int[] expectedResult = {3, 8, 3, 3, 3, 8};
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
+
 }
